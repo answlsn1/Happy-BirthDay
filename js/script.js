@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
     new Swiper('.sw_letter1', {
 
         effect : 'fade',
@@ -18,16 +19,48 @@ $(document).ready(function(){
             disableOnInteraction: true,
         },
     });
-});
 
+    $( window ).scroll( function() {
+        if ( $( this ).scrollTop() > 200 ) {
+            $( '.top' ).fadeIn();
+        } else {
+            $( '.top' ).fadeOut();
+        }
+    } );
+    $( '.start' ).click( function() {
+        $( 'html, body' ).animate( { scrollTop : 1500 }, 800 );
+        return false;
+    } );
 
-$(".start1").on("click", function() {
-    // 기본 설정으로 autoplay 시작
-    console.log("autoplay start");
-    swiper.autoplay.start();
-});
+    
+    let modal = $('.modal');
+    let modal_cont = $('.modal-cont');
+    let modal_close = $('.modal-close');
 
-$(".stop1").on("click", function() {
-    console.log("autoplay stop");
-    swiper.autoplay.stop();
+    $('.i1').click(function(){
+        $('.m1').fadeIn();
+    });
+    $('.i2').click(function(){
+        $('.m2').fadeIn();
+    });
+    $('.i3').click(function(){
+        $('.m3').fadeIn();
+    });
+    $('.i4').click(function(){
+        $('.m4').fadeIn();
+    });
+    $('.i5').click(function(){
+        $('.m5').fadeIn();
+    });
+    $('.i6').click(function(){
+        $('.m6').fadeIn();
+    });
+
+    modal_close.click(function () {
+        modal.fadeOut();
+    });
+
+    modal.click(function () {
+        modal.fadeOut();
+    });
 });
