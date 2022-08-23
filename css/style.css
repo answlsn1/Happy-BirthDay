@@ -186,7 +186,7 @@ body {
     transform: translateY(-50%);
 
     display: block;
-    width: 40rem;
+    width: 100vw;
     height: 50rem;
     background-color: #fff;
     border-radius: 15px;
@@ -200,6 +200,7 @@ body {
     transform: translateX(-50%);
     text-align: center;
 
+    width: 30rem;
     font-size: 2rem;
     white-space: nowrap;
     line-height: 2;
