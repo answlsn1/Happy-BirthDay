@@ -27,6 +27,7 @@ html {
     font-size: 10px;
     overflow-x:hidden;
     touch-action:pan-y;
+    pointer-event:auto;
 }
 
 body {
