@@ -85,10 +85,10 @@ body {
 .tit > img {
     position:relative;
     left:50%;
-    top:-20rem;
+    top:-15rem;
     transform:translateX(-50%);
     display:block;
-    max-width:650px;
+    max-width:550px;
     opacity:0.9;
 }
 
