@@ -28,7 +28,7 @@ $(document).ready(function(){
         }
     } );
     $( '.start' ).click( function() {
-        $( 'html, body' ).animate( { scrollTop : 2000 }, 800 );
+        $( 'html, body' ).animate( { scrollBottom : 0 }, 800 );
         return false;
     } );
 
